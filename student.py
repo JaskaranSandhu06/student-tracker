@@ -10,3 +10,6 @@ class Student:
         self.age = int(a[1])
         self.gpa = float(a[2])
         self.height = float(a[3])
+
+    def __str__(self):
+        return self.name + "," + str(self.age) + "," + str(self.gpa) + "," + str(self.height)
